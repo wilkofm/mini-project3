@@ -6,7 +6,7 @@ Album Reviewer Database
 
 What Do I Want To Make?
 
-A database for a social media platform where users can rate and review their favourite albums. This database will be made up of three tables, an album table, a user table and a review table. The user will interact with the album via the review table.
+A database for a social media platform where users can rate and review their favourite albums. This database will be made up of four tables, an album table, a user table, an artist table and a review table. The user will interact with the album via the review table.
 
 # Github
 
