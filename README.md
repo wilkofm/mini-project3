@@ -16,7 +16,7 @@ Main Branch
 
 - This is my production-ready branch. It should always contain stable, tested code
 
-MySQL Database brance
+MySQL Database branch
 
 - This is the branch where I will set up and implement the code that will run the database
 
