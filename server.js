@@ -1,10 +1,10 @@
 const express = require("express");
 const app = express();
 require("dotenv").config();
+let dbConnect = require("./dbConnect");
 let userRoutes = require("./routes/userRoutes");
 let postRoutes = require("./routes/postRoutes");
 let commentRoutes = require("./routes/commentRoutes");
-let dbConnect = require("./dbConnect");
 const harryPotterRoutes = require("./routes/harryPotterRoutes");
 
 // parse requests of content-type - application / json;
