@@ -24,6 +24,12 @@ Models branch
 
 - This is the branch where I will create the models in my database
 
+Routes branch
+
+- This is the branch where I will create the routes in my database
+
+# Implementation
+
 How To Implement This Project Yourself
 
 - Import the files within this GitHub project into your development environment
