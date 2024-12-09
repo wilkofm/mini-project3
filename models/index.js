@@ -25,6 +25,6 @@ init();
 module.exports = {
   Album,
   Artist,
-  Reivew,
+  Review,
   User,
 };
