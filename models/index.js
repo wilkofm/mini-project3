@@ -14,10 +14,10 @@ Review.belongsTo(User, { foreignKey: "userId" }); //a review belongs to a user
 User.hasMany(Review, { foreignKey: "userId" }); //a user can leave many reviews
 
 async function init() {
-  await Album.sync();
   await Artist.sync();
-  await Review.sync();
+  await Album.sync();
   await User.sync();
+  await Review.sync();
 }
 
 init();
