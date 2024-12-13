@@ -28,6 +28,10 @@ Routes branch
 
 - This is the branch where I will create the routes in my database
 
+Controllers branch
+
+- This is the branch where I will create the controllers in my database
+
 # Implementation
 
 How To Implement This Project Yourself
