@@ -23,4 +23,8 @@ artistRouter.delete("/:id", (req, res) => {
   Controllers.artistController.deleteArtist(req, res);
 });
 
+artistRouter.get("/details", (req, res) => {
+  Controllers.artistController.getArtistWithDetails(req, res);
+});
+
 module.exports = artistRouter;

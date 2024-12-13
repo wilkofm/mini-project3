@@ -23,4 +23,8 @@ userRouter.delete("/:id", (req, res) => {
   Controllers.userController.deleteUser(req, res);
 });
 
+userRouter.get("/details", (req, res) => {
+  Controllers.userController.getUserWithDetails(req, res);
+});
+
 module.exports = userRouter;

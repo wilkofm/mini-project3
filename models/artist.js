@@ -1,6 +1,5 @@
 const { DataTypes, Model } = require("sequelize");
-let dbConnect = require("../dbConnect");
-const sequelizeInstance = dbConnect.Sequelize;
+const { sequelize } = require("../dbConnect");
 
 class Artist extends Model {}
 
@@ -30,7 +29,7 @@ Artist.init(
     },
   },
   {
-    sequelize: sequelizeInstance,
+    sequelize,
     modelName: "artists", // uselowercase plural format
     timestamps: true,
     freezeTableName: true,

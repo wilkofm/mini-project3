@@ -38,3 +38,81 @@ How To Implement This Project Yourself
 
 - Import the files within this GitHub project into your development environment
 - Install relevant packages to run this project (sequelize, mysql)
+- Update the .env with your database details
+
+# Http Request Methods
+
+Mini Project Collections
+
+GET requests
+http://localhost:8080/api/albums
+http://localhost:8080/api/artists
+http://localhost:8080/api/reviews
+http://localhost:8080/api/users
+
+POST requests
+http://localhost:8080/api/albums/create
+http://localhost:8080/api/artists/create
+http://localhost:8080/api/reviews/create
+http://localhost:8080/api/users/create
+
+Album JSON example
+
+{
+"albumId": 6,
+"artistId": 1,
+"albumTitle": "Round About Midnight",
+"year": 1957,
+"genre": "Jazz"
+}
+
+PUT requests
+http://localhost:8080/api/albums/6
+http://localhost:8080/api/artists/1
+http://localhost:8080/api/reviews/1
+http://localhost:8080/api/users/1
+
+Album JSON example
+
+{
+"albumTitle": “Round About Midnight (Remastered)",
+"year": 2020
+}
+
+DELETE requests
+http://localhost:8080/api/albums/6
+http://localhost:8080/api/artists/1
+http://localhost:8080/api/reviews/1
+http://localhost:8080/api/users/1
+
+Join Operation GET requests
+http://localhost:8080/api/albums/details
+http://localhost:8080/api/artists/details
+http://localhost:8080/api/reviews/details
+http://localhost:8080/api/users/details
+
+Transaction POST requests
+http://localhost:8080/api/albums/createWithReviews
+
+Album JSON example
+
+{
+"albumData": {
+"albumTitle": "Round About Midnight",
+"artistId": 1,
+"year": 1957,
+"genre": "Jazz"
+},
+"reviewsData": [
+{
+"userId": 2,
+"rating": 5,
+"review": "A masterpiece of jazz."
+},
+{
+"userId": 3,
+"rating": 4,
+"review": "Iconic and timeless."
+}
+]
+}

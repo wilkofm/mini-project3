@@ -23,4 +23,8 @@ reviewRouter.delete("/:id", (req, res) => {
   Controllers.reviewController.deleteReview(req, res);
 });
 
+reviewRouter.get("/details", (req, res) => {
+  Controllers.reviewController.getReviewsWithDetails(req, res);
+});
+
 module.exports = reviewRouter;

@@ -1,6 +1,5 @@
 const { DataTypes, Model } = require("sequelize");
-let dbConnect = require("../dbConnect");
-const sequelizeInstance = dbConnect.Sequelize;
+const { sequelize } = require("../dbConnect");
 
 class Album extends Model {}
 
@@ -23,8 +22,8 @@ Album.init(
     year: {
       type: DataTypes.INTEGER,
       allowNull: false,
-      validDate: {
-        inInt: true,
+      validate: {
+        isInt: true,
         min: 1900,
         max: new Date().getFullYear(),
       },
@@ -35,7 +34,7 @@ Album.init(
     },
   },
   {
-    sequelize: sequelizeInstance,
+    sequelize,
     modelName: "albums", // uselowercase plural format
     timestamps: true,
     freezeTableName: true,

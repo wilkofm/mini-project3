@@ -1,7 +1,7 @@
 "use strict";
 const Models = require("../models");
 
-// finds all users in DB, then sends array as response
+// finds all artists
 const getArtists = (res) => {
   Models.Artist.findAll({})
     .then((data) => {
@@ -13,7 +13,7 @@ const getArtists = (res) => {
     });
 };
 
-// uses JSON from request body to create new user in DB
+// creates artist
 const createArtist = (data, res) => {
   Models.Artist.create(data)
     .then((data) => {
@@ -25,10 +25,10 @@ const createArtist = (data, res) => {
     });
 };
 
-// uses JSON from request body to update user ID from params
+// updates artist
 const updateArtist = (req, res) => {
   Models.Artist.update(req.body, {
-    where: { id: req.params.id },
+    where: { ArtistId: req.params.id },
     returning: true,
   })
     .then((data) => {
@@ -40,9 +40,34 @@ const updateArtist = (req, res) => {
     });
 };
 
-// deletes user matching ID from params
+// deletes artist
 const deleteArtist = (req, res) => {
-  Models.Artist.destroy({ where: { id: req.params.id } })
+  Models.Artist.destroy({ where: { ArtistId: req.params.id } })
+    .then((data) => {
+      res.send({ result: 200, data: data });
+    })
+    .catch((err) => {
+      console.log(err);
+      res.send({ result: 500, error: err.message });
+    });
+};
+
+//joins artist
+const getArtistWithDetails = (req, res) => {
+  Models.Artist.findAll({
+    include: [
+      {
+        model: Models.Album, //joins with Review
+        attributes: ["albumTitle", "year", "genre"],
+        include: [
+          {
+            model: Models.Review,
+            attributes: ["rating", "review"],
+          },
+        ],
+      },
+    ],
+  })
     .then((data) => {
       res.send({ result: 200, data: data });
     })
@@ -57,4 +82,5 @@ module.exports = {
   createArtist,
   updateArtist,
   deleteArtist,
+  getArtistWithDetails,
 };

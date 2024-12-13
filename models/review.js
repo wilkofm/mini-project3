@@ -1,6 +1,5 @@
 const { DataTypes, Model } = require("sequelize");
-let dbConnect = require("../dbConnect");
-const sequelizeInstance = dbConnect.Sequelize;
+const { sequelize } = require("../dbConnect");
 
 class Review extends Model {}
 
@@ -34,7 +33,7 @@ Review.init(
     },
   },
   {
-    sequelize: sequelizeInstance,
+    sequelize,
     modelName: "reviews", // uselowercase plural format
     timestamps: true,
     freezeTableName: true,
