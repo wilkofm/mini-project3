@@ -1,46 +1,52 @@
-# mini-project3
+# 🎵 Album Reviewer Database
 
-Album Reviewer Database
+A backend-powered database for a social media-style platform where users can rate and review their favourite music albums. This project uses Sequelize ORM and MySQL to handle CRUD operations, relationships, and transactions between users, albums, artists, and reviews.
 
 # Project Outline
 
-What Do I Want To Make?
+The goal of this project was to design and implement a MySQL database integrated with a Node.js backend using Sequelize. The database consists of four related tables—albums, artists, users, and reviews—and showcases core backend development principles, including data validation, relationship mapping, foreign key constraints, transactions, and query optimization.
 
-A database for a social media platform where users can rate and review their favourite albums. This database will be made up of four tables, an album table, a user table, an artist table and a review table. The user will interact with the album via the review table.
+# Features
 
-# Github
+- Full CRUD functionality for albums, artists, users, and reviews
+- One-to-many and many-to-many relationships between models
+- Complex JOIN operations to retrieve nested relational data
+- Transaction management for grouped data insertion
+- Input validation and error handling
+- Foreign key constraints with cascading deletes
+- Modular architecture using Express routes and controllers
 
-How many branches and what for?
+# Screenshots
 
-Main Branch
+Coming Soon
 
-- This is my production-ready branch. It should always contain stable, tested code
+# Installation Instructions
 
-MySQL Database branch
-
-- This is the branch where I will set up and implement the code that will run the database
-
-Models branch
-
-- This is the branch where I will create the models in my database
-
-Routes branch
-
-- This is the branch where I will create the routes in my database
-
-Controllers branch
-
-- This is the branch where I will create the controllers in my database
-
-# Implementation
-
-How To Implement This Project Yourself
-
-- Import the files within this GitHub project into your development environment
+- Clone and import the files within this GitHub project into your development environment
 - Install relevant packages to run this project (sequelize, mysql)
 - Update the .env with your database details
+- Start the server
+- Use ThunderClient or Postman to test the endpoints at http://localhost:8080
 
-# Http Request Methods
+# Tech Stack
+
+- Node.js & Express.js – Backend server
+- MySQL – Relational database
+- Sequelize – ORM for database interaction
+- TablePlus – GUI for MySQL (optional)
+- ThunderClient – API testing tool
+- Draw.io – Used to design the ERD
+
+# Testing Strategy
+
+- All routes tested using ThunderClient
+- Test data inserted using POST requests and verified via TablePlus
+- CRUD functionality confirmed through GET, POST, PUT, DELETE endpoints
+- Join operations tested via /details routes
+- Transactions validated with /createWithReviews POST route
+- Error handling tested with incorrect and missing inputs
+
+# HTTP Request Methods
 
 Mini Project Collections
 
