@@ -48,20 +48,28 @@ Coming Soon
 
 # HTTP Request Methods
 
-GET requests
+<pre></pre>
+```GET requests
 http://localhost:8080/api/albums
 http://localhost:8080/api/artists
 http://localhost:8080/api/reviews
 http://localhost:8080/api/users
+```
+</pre>
 
-POST requests
+<pre>
+```POST requests
 http://localhost:8080/api/albums/create
 http://localhost:8080/api/artists/create
 http://localhost:8080/api/reviews/create
 http://localhost:8080/api/users/create
-
+```
+</pre>
+  
 Album JSON example
 
+<pre>
+  ```
 {
 "albumId": 6,
 "artistId": 1,
@@ -69,6 +77,8 @@ Album JSON example
 "year": 1957,
 "genre": "Jazz"
 }
+  ```
+  </pre>
 
 PUT requests
 http://localhost:8080/api/albums/6
