@@ -48,28 +48,24 @@ Coming Soon
 
 # HTTP Request Methods
 
-<pre></pre>
-```GET requests
+GET requests
+<pre>
 http://localhost:8080/api/albums
 http://localhost:8080/api/artists
 http://localhost:8080/api/reviews
 http://localhost:8080/api/users
-```
 </pre>
 
+POST requests
 <pre>
-```POST requests
 http://localhost:8080/api/albums/create
 http://localhost:8080/api/artists/create
 http://localhost:8080/api/reviews/create
 http://localhost:8080/api/users/create
-```
 </pre>
   
 Album JSON example
-
 <pre>
-  ```
 {
 "albumId": 6,
 "artistId": 1,
@@ -77,39 +73,47 @@ Album JSON example
 "year": 1957,
 "genre": "Jazz"
 }
-  ```
-  </pre>
+</pre>
 
 PUT requests
+<pre>
 http://localhost:8080/api/albums/6
 http://localhost:8080/api/artists/1
 http://localhost:8080/api/reviews/1
 http://localhost:8080/api/users/1
+</pre>
 
 Album JSON example
-
+<pre>
 {
 "albumTitle": “Round About Midnight (Remastered)",
 "year": 2020
 }
+</pre>
 
 DELETE requests
+<pre>
 http://localhost:8080/api/albums/6
 http://localhost:8080/api/artists/1
 http://localhost:8080/api/reviews/1
 http://localhost:8080/api/users/1
+</pre>
 
 Join Operation GET requests
+<pre>
 http://localhost:8080/api/albums/details
 http://localhost:8080/api/artists/details
 http://localhost:8080/api/reviews/details
 http://localhost:8080/api/users/details
+</pre>
 
 Transaction POST requests
+<pre>
 http://localhost:8080/api/albums/createWithReviews
+</pre>
 
 Album JSON example
-
+<pre>
 {
 "albumData": {
 "albumTitle": "Round About Midnight",
@@ -130,3 +134,4 @@ Album JSON example
 }
 ]
 }
+</pre>
