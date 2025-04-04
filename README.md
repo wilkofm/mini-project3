@@ -18,7 +18,20 @@ The goal of this project was to design and implement a MySQL database integrated
 
 # Screenshots
 
-Coming Soon
+_Albums_
+![Albums](project-images/Albums.png)
+
+_Artists_
+![Artists](project-images/Artists.png)
+
+_Reviews_
+![Reviews](project-images/Reviews.png)
+
+_Logical Model_
+![Logical Model](drawio/logical-model.png)
+
+_Physical Model_
+![Physical Model](drawio/physical-model.png)
 
 # Installation Instructions
 
@@ -49,6 +62,7 @@ Coming Soon
 # HTTP Request Methods
 
 GET requests
+
 <pre>
 http://localhost:8080/api/albums
 http://localhost:8080/api/artists
@@ -57,14 +71,16 @@ http://localhost:8080/api/users
 </pre>
 
 POST requests
+
 <pre>
 http://localhost:8080/api/albums/create
 http://localhost:8080/api/artists/create
 http://localhost:8080/api/reviews/create
 http://localhost:8080/api/users/create
 </pre>
-  
+
 Album JSON example
+
 <pre>
 {
 "albumId": 6,
@@ -76,6 +92,7 @@ Album JSON example
 </pre>
 
 PUT requests
+
 <pre>
 http://localhost:8080/api/albums/6
 http://localhost:8080/api/artists/1
@@ -84,6 +101,7 @@ http://localhost:8080/api/users/1
 </pre>
 
 Album JSON example
+
 <pre>
 {
 "albumTitle": “Round About Midnight (Remastered)",
@@ -92,6 +110,7 @@ Album JSON example
 </pre>
 
 DELETE requests
+
 <pre>
 http://localhost:8080/api/albums/6
 http://localhost:8080/api/artists/1
@@ -100,6 +119,7 @@ http://localhost:8080/api/users/1
 </pre>
 
 Join Operation GET requests
+
 <pre>
 http://localhost:8080/api/albums/details
 http://localhost:8080/api/artists/details
@@ -108,11 +128,13 @@ http://localhost:8080/api/users/details
 </pre>
 
 Transaction POST requests
+
 <pre>
 http://localhost:8080/api/albums/createWithReviews
 </pre>
 
 Album JSON example
+
 <pre>
 {
 "albumData": {
