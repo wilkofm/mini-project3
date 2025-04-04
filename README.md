@@ -48,8 +48,6 @@ Coming Soon
 
 # HTTP Request Methods
 
-Mini Project Collections
-
 GET requests
 http://localhost:8080/api/albums
 http://localhost:8080/api/artists
