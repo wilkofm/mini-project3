@@ -157,3 +157,8 @@ Album JSON example
 ]
 }
 </pre>
+
+# Contact
+
+Created by Max Wilkinson
+[Github](https://github.com/wilkofm) | [LinkedIn](https://www.linkedin.com/in/max-wilkinson-b35aa29b/)
