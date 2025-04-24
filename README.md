@@ -8,13 +8,13 @@ The goal of this project was to design and implement a MySQL database integrated
 
 # Features
 
-- Full CRUD functionality for albums, artists, users, and reviews
-- One-to-many and many-to-many relationships between models
-- Complex JOIN operations to retrieve nested relational data
-- Transaction management for grouped data insertion
-- Input validation and error handling
-- Foreign key constraints with cascading deletes
-- Modular architecture using Express routes and controllers
+- 📝 Full CRUD functionality for albums, artists, users, and reviews
+- 🔗 One-to-many and many-to-many relationships between models
+- 🧩 Complex JOIN operations to retrieve nested relational data
+- 🔄 Transaction management for grouped data insertion
+- ✅ Input validation and error handling
+- 🔐 Foreign key constraints with cascading deletes
+- 🧱 Modular architecture using Express routes and controllers
 
 # Screenshots
 
